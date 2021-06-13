@@ -61,5 +61,5 @@ int mode(int a[], int s){
    }
 
   }
-  return ++pos;
+  return pos;
 }

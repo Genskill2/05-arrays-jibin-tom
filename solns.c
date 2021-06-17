@@ -65,11 +65,11 @@ int mode(int a[], int s){
   return pos;
 }
 
-int factors(int n,int a[]){
+int factors(int n,int ret[]){
   int ct=0;
   while (n%2 == 0)
     {
-        a[ct]=2;
+        ret[ct]=2;
         n = n/2;
         ct++;
     }
@@ -78,14 +78,14 @@ for (int i = 3; i <= sqrt(n); i = i+2)
         
         while (n%i == 0)
         {   ct++;
-            a[ct] = i;
+            ret[ct] = i;
             
             n = n/i;
         }
     }
   if (n > 2)
   {  ct++;
-     a[ct]=n;
+     ret[ct]=n;
   }
   
   return (ct+1);

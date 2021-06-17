@@ -1,5 +1,6 @@
 /* Enter your solutions in this file */
 #include <stdio.h>
+#include <math.h>
 
 int max(int a[], int s){
   
@@ -87,5 +88,5 @@ for (int i = 3; i <= sqrt(n); i = i+2)
      a[ct]=n;
   }
   
-  return ct+1;
+  return (ct+1);
 }

@@ -66,12 +66,12 @@ int mode(int a[], int s){
 }
 
 int factors(int n,int ret[]){
-  int ct=0;
+  int ct=-1;
   while (n%2 == 0)
-    {
+    {   ct++;
         ret[ct]=2;
         n = n/2;
-        ct++;
+        
     }
 for (int i = 3; i <= sqrt(n); i = i+2)
     {
